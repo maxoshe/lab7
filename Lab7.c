@@ -73,7 +73,7 @@ void GPIOPortF_Handler(void)
 		{
 			global_counter = 0;
 		}
-		SysCtlDelay(1000000);		//delay to avoid switch debounce
+		SysCtlDelay(1000000);		//delay to avoid bounce
 	}
 	
 	//SW2 is pressed
@@ -87,7 +87,7 @@ void GPIOPortF_Handler(void)
 		{
 			global_counter = 3;
 		}
-		SysCtlDelay(1000000);		//delay to avoid switch debounce
+		SysCtlDelay(1000000);		//delay to avoid bounce
 	}
 }
 
